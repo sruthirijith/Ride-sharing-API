@@ -54,7 +54,7 @@ eg: {
     "updated_at": "2024-09-19T04:33:36.698272Z"
 }
 
-4. POST /api/rides/{id}/update_status/ -----Update Ride Status
+4. PATCH /api/rides/{id}/update_status/ -----Update Ride Status
 Request Body: { "status": "string" } (Status options: PENDING, IN_PROGRESS, COMPLETED)
 Response: { "status": "string" }
 
@@ -67,7 +67,7 @@ Response: { "driver": "string" }
 
 eg:   {"driver":"sruthi"}
 
-6. POST /api/rides/{id}/update_location/  ------Update Ride Location
+6. PATCH /api/rides/{id}/  ------Update Ride Location
 Request Body: { "current_location": "string" }
 Response: { "current_location": "string" }
 
